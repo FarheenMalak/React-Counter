@@ -1,0 +1,131 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #2980b9); /* Deep blue background with gradient */
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.1;
+  margin-bottom: 1.5em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Glow effect */
+}
+
+.card {
+  background: #333;
+  padding: 3em 4em;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-15px); /* Lifts the card on hover */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); /* Stronger shadow effect */
+}
+
+button {
+  border-radius: 12px;
+  border: 2px solid transparent;
+  padding: 1em 2em;
+  font-size: 1.4em;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  margin: 1em;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+button.increase {
+  background: linear-gradient(135deg, #2ecc71, #27ae60); /* Neon green gradient */
+}
+
+button.decrease {
+  background: linear-gradient(135deg, #e74c3c, #c0392b); /* Bright red gradient */
+}
+
+button:hover {
+  transform: translateY(-5px); /* Button lifts up on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+button.increase:hover {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  box-shadow: 0 8px 30px rgba(0, 255, 0, 0.4); /* Green glow effect */
+}
+
+button.decrease:hover {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+  box-shadow: 0 8px 30px rgba(255, 0, 0, 0.4); /* Red glow effect */
+}
+
+button:active {
+  transform: translateY(2px); /* Button presses down when clicked */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px solid #e74c3c; /* Focus outline */
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button.increase {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+  }
+  button.decrease {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+  }
+  button:hover {
+    transform: translateY(-5px);
+  }
+  .card {
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
+
