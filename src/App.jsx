@@ -23,7 +23,13 @@ function Counter() {
         </button>
         <button 
           className="decrease"
-          onClick={() => setCount(count - 1)}>
+          onClick={() => {
+            if (count <= 0) {
+              alert('Cannot go below this value');
+            } else {
+              setCount(count - 1);
+            }
+          }}>
           Decrease
         </button>
       </div>
